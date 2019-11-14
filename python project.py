@@ -5,7 +5,7 @@ fred = turtle.Turtle()
 fred.speed(20)
 
 
-colours = ["green", "yellow","blue","red","pink","purple","cyan","orange"]
+colours = ["green", "yellow"]
 
 length = 500
 angle= 91
