@@ -1,8 +1,24 @@
-from turtle import*
-colors = ['red', 'purple', 'blue', 'green', 'yellow', 'orange']
-for x in range(360):
-    pencolor(colors[x % 6])
-    width(x / 100 + 1)
-    forward(x)
-    left(59)
-print("credits to https://github.com/asweigart/simple-turtle-tutorial-for-python/blob/master/simple_turtle_tutorial.md")
+import turtle
+import random
+
+fred = turtle.Turtle()
+fred.speed(20)
+
+
+colours = ["green", "yellow","blue","red","pink","purple","cyan","orange"]
+
+length = 500
+angle= 91
+circle_size = 10
+
+for side in range(length):
+  #print(side)
+  colour = random.choice(colours)
+  fred.pencolor(colour)
+  fred.penup()
+  fred.forward(side)
+  fred.pendown()
+  fred.left(angle)
+  fred.begin_fill()
+  fred.circle(circle_size)
+  fred.end_fill()
